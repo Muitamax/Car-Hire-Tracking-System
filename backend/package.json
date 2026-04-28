@@ -1,0 +1,59 @@
+{
+  "name": "car-hire-tracking-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Car Hire Tracking System",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "migrate": "sequelize-cli db:migrate",
+    "seed": "sequelize-cli db:seed:all",
+    "build": "echo 'No build step required for Node.js'",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "joi": "^17.9.2",
+    "sequelize": "^6.32.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "socket.io": "^4.7.2",
+    "redis": "^4.6.7",
+    "node-cron": "^3.0.2",
+    "express-rate-limit": "^6.8.1",
+    "compression": "^1.7.4",
+    "express-validator": "^7.0.1",
+    "winston": "^3.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.2",
+    "supertest": "^6.3.3",
+    "eslint": "^8.45.0",
+    "eslint-config-standard": "^17.1.0",
+    "sequelize-cli": "^6.6.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "car-hire",
+    "tracking",
+    "fleet-management",
+    "real-time",
+    "nodejs",
+    "express"
+  ],
+  "author": "Car Hire Tracking System",
+  "license": "MIT"
+}
